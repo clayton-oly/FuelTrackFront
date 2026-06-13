@@ -1,0 +1,19 @@
+<p>refuel-form works!</p>
+
+<label for="veiculo">Veículo:</label>
+<select id="veiculo" [(ngModel)]="abastecimento.veiculoId">
+  <option *ngFor="let veiculo of veiculos" [value]="veiculo.id">{{ veiculo.nome }}</option>
+</select>
+<label for="odometro">Odômetro (km):</label>
+<input id="odometro" type="number" [(ngModel)]="abastecimento.odometroKm" />
+<label for="litros">Litros:</label>
+<input id="litros" type="number" [(ngModel)]="abastecimento.litros" />
+<label for="precoTotal">Preço Total:</label>
+<input id="precoTotal" type="number" [(ngModel)]="abastecimento.precoTotal" />
+<label for="precoCombustivel">Preço Combustível:</label>
+<input id="precoCombustivel" type="number" [(ngModel)]="abastecimento.precoCombustivel" />
+<label for="tanqueCompleto">Tanque Completo:</label>
+<input id="tanqueCompleto" type="checkbox" [(ngModel)]="abastecimento.isTanqueCompleto" />
+<label for="anotacoes">Anotações:</label>
+<textarea id="anotacoes" [(ngModel)]="abastecimento.anotacoes"></textarea>
+<button (click)="saveRefuel()">Salvar</button>

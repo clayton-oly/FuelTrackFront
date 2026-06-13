@@ -1,0 +1,28 @@
+<div class="tabela">
+
+    <h2>Últimos abastecimentos</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>KM</th>
+                <th>Litros</th>
+                <th>Valor</th>
+                <th>Consumo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let abastecimento of abastecimentos$ | async">
+                <td>{{ abastecimento.createdAt | date:'dd/MM/yyyy' }}</td>
+                <td>{{ abastecimento.odometroKm }}</td>
+                <td>{{ abastecimento.litros }}</td>
+                <td>{{ abastecimento.precoTotal | currency:'BRL':'symbol':'1.2-2' }}</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p *ngIf="erro">{{ erro }}</p>
+
+</div>

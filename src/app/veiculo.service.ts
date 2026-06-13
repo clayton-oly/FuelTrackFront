@@ -15,9 +15,9 @@ export class VeiculosService {
     return this.http.get<Veiculo[]>(this.apiUrl);
   }
 
-  getId(): Observable<number> {
-    return this.http.get<Veiculo[]>(this.apiUrl).pipe(map( lista => lista.at(-1)?.id ?? 0));
-  }
+  // getId(): Observable<number> {
+  //   return this.http.get<Veiculo[]>(this.apiUrl).pipe(map( lista => lista.at(-1)?.id ?? 0));
+  // }
 
   post(Veiculo: Veiculo): Observable<Veiculo[]> {
     console.log(this.apiUrl, + Veiculo)
