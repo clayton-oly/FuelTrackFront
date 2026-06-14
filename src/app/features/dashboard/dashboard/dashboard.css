@@ -56,12 +56,6 @@ body{
     margin-top:20px;
 }
 
-.tabela{
-    margin-top:20px;
-    background:#1e1e1e;
-    border-radius:15px;
-    padding:20px;
-}
 
 table{
     width:100%;
@@ -86,4 +80,3 @@ tr{
     border-radius:10px;
     cursor:pointer;
 }
-

@@ -15,6 +15,10 @@ export class AbastecimentosService {
     return this.http.get<Abastecimento[]>(this.apiUrl);
   }
 
+  getAllLast(): Observable<Abastecimento[]> {
+    return this.http.get<Abastecimento[]>(`${this.apiUrl}/${"alllast"}`)
+  }
+
   // getId(): Observable<number> {
   //   return this.http.get<Abastecimento[]>(this.apiUrl).pipe(map( lista => lista.at(-1)?.id ?? 0));
   // }

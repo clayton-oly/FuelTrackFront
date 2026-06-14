@@ -37,6 +37,7 @@ export class RefuelForm {
     anotacoes: '',
     odometroKm: 0,
     veiculoId: this.veiculos.length > 0 ? this.veiculos[0].id : 0,
+    consumo: 0
   };
 
   saveRefuel() {

@@ -1,0 +1,27 @@
+body{
+    background:#121212;
+    color:white;
+    font-family:Segoe UI;
+    margin:0;
+}
+
+.tabela{
+    margin-top:20px;
+    background:#1e1e1e;
+    border-radius:15px;
+    padding:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    text-align:left;
+}
+
+tr{
+    border-bottom:1px solid #333;
+}

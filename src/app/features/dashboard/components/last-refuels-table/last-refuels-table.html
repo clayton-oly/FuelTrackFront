@@ -18,7 +18,7 @@
                 <td>{{ abastecimento.odometroKm }}</td>
                 <td>{{ abastecimento.litros }}</td>
                 <td>{{ abastecimento.precoTotal | currency:'BRL':'symbol':'1.2-2' }}</td>
-                <td>-</td>
+                <td>{{ abastecimento.consumo | number:'1.2-2' }}</td>
             </tr>
         </tbody>
     </table>

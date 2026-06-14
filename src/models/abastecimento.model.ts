@@ -7,4 +7,5 @@ export interface Abastecimento {
     isTanqueCompleto: boolean;
     anotacoes: string;
     createdAt: Date;
+    consumo: number;
 }

@@ -22,7 +22,7 @@ export class LastRefuelsTable implements OnInit {
   }
 
   consultarAbastecimentos() {
-    this.abastecimentos$ = this.abastecimentoService.get().pipe(
+    this.abastecimentos$ = this.abastecimentoService.getAllLast().pipe(
       catchError(() => {
         this.erro = 'Nao foi possivel carregar os abastecimentos.';
         return of([]);
